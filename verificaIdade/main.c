@@ -3,6 +3,7 @@
 
 int main()
 {
-    printf("Hello world!\n");
+    int anoAtual, anoNascimento;
+    printf("Digite seu ano de nascimento\n");
     return 0;
 }
