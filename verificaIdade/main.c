@@ -2,6 +2,7 @@
 #include <stdlib.h>
 
 void verificaIdadeBebe(int anoAtual, int anoNascimento);
+void verificaIdadeCrianca(int anoAtual, int anoNascimento);
 int main()
 {
     int anoAtual, anoNascimento;
@@ -11,16 +12,28 @@ int main()
     scanf("%d",&anoAtual);
 
     verificaIdadeBebe(anoAtual,anoNascimento);
-
+    verificaIdadeCrianca(anoAtual, anoNascimento);
     return 0;
 }
 
 
-void verificaIdadeBebe(int anoAtual, int anoNascimento){
+void verificaIdadeBebe(int anoAtual, int anoNascimento)
+{
     int idade = anoAtual - anoNascimento;
-    if(idade>= 0 && idade<=3){
+    if(idade>= 0 && idade<=3)
+    {
         printf("Voce eh um bebe\n");
 
     }
 
+}
+
+//Rodrigo
+void verificaIdadeCrianca(int anoAtual, int anoNascimento)
+{
+    int idade = anoAtual - anoNascimento;
+    if(idade >= 4 && idade <= 10)
+    {
+        printf("Voce possui a idade de uma crianca\n");
+    }
 }
