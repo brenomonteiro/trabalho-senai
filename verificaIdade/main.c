@@ -3,6 +3,7 @@
 
 void verificaIdadeBebe(int anoAtual, int anoNascimento);
 void verificaIdadeCrianca(int anoAtual, int anoNascimento);
+void verificaIdadeAdolescente(int anoAtual, int anoNacimento);
 void verificaIdadeAdulta(int anoAtual, int anoNascimento);
 void verificaIdadeIdosa(int anoAtual, int anoNascimento);
 int main()
@@ -15,6 +16,7 @@ int main()
 
     verificaIdadeBebe(anoAtual,anoNascimento);
     verificaIdadeCrianca(anoAtual, anoNascimento);
+    verificaIdadeAdolescente(anoAtual, anoNascimento);
     verificaIdadeAdulta(anoAtual, anoNascimento);
     verificaIdadeIdosa(anoAtual, anoNascimento);
     return 0;
@@ -61,5 +63,15 @@ void verificaIdadeAdulta(int anoAtual, int anoNascimento)
    if (idade >= 19 && idade <= 50)
    {
      printf("A pessoa e adulta.\n");
+   }
+}
+
+//Geovani
+void verificaIdadeAdolescente(int anoAtual, int anoNacimento) {
+
+   int idade = anoAtual - anoNacimento;
+
+   if (idade >= 11 && idade <= 18) {
+     printf("A pessoa e adolescente\n");
    }
 }

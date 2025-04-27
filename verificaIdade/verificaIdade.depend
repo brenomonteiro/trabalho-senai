@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1745788581 source:c:\users\fellipe brasil\documents\ead\trabalho-senai\verificaidade\main.c
+	<stdio.h>
+	<stdlib.h>
+
