@@ -3,6 +3,7 @@
 
 void verificaIdadeBebe(int anoAtual, int anoNascimento);
 void verificaIdadeCrianca(int anoAtual, int anoNascimento);
+void verificaIdadeIdosa(int anoAtual, int anoNascimento);
 int main()
 {
     int anoAtual, anoNascimento;
@@ -13,6 +14,7 @@ int main()
 
     verificaIdadeBebe(anoAtual,anoNascimento);
     verificaIdadeCrianca(anoAtual, anoNascimento);
+    verificaIdadeIdosa(anoAtual, anoNascimento);
     return 0;
 }
 
@@ -36,4 +38,15 @@ void verificaIdadeCrianca(int anoAtual, int anoNascimento)
     {
         printf("Voce possui a idade de uma crianca\n");
     }
+}
+
+//Davi
+void verificaIdadeIdosa(int anoAtual, int anoNascimento)
+{
+    int idade = anoAtual - anoNascimento;
+
+    if(idade >= 51)
+        {
+        printf("Voce e uma possa idosa\n");
+        }
 }
